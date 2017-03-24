@@ -25,6 +25,5 @@
     "envs": ["browser"],
     "globals": ["Rd"],
     "plugins": ["markdown"]
-  },
-  "private": true
+  }
 }
