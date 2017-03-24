@@ -1,0 +1,27 @@
+{
+  "name": "@readable/lock",
+  "version": "0.0.0",
+  "description": "Create a function that can only be executed sequentially",
+  "main": "lock.js",
+  "scripts": {
+    "lint:js": "standard lock.js",
+    "lint:md": "standard --global Rd --plugin markdown README.md",
+    "lint": "npm run lint:js & npm run lint:md & wait",
+    "preversion": "npm run lint"
+  },
+  "keywords": [
+    "binary",
+    "lock",
+    "mutex",
+    "semaphore",
+    "sync",
+    "synchronization"
+  ],
+  "author": "Oleg",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-plugin-markdown": "^1.0.0-beta.4",
+    "standard": "^9.0.2"
+  },
+  "private": true
+}
