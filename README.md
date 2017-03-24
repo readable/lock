@@ -9,7 +9,7 @@ While another execution is due, all other requests to run will be ignored.
 
 ``` js
 var throttle = Rd.lock(function (callback) {
-  window.setTimeout(callback, 16)
+  setTimeout(callback, 16)
 })
 
 window.addEventListener('resize', function () {
@@ -21,7 +21,7 @@ window.addEventListener('resize', function () {
 ```
 
 ``` js
-var throttledRAF = Rd.lock(window.requestAnimationFrame)
+var throttledRAF = Rd.lock(requestAnimationFrame)
 
 window.addEventListener('resize', function () {
   throttledRAF(function () {
